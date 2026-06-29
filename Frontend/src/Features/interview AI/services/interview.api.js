@@ -44,7 +44,7 @@
 import axios from "axios";
 
 // Define the live production Render URL
-const BASE_URL = "https://interview-ai-xh7p.onrender.com";
+const BASE_URL = "https://interview-ai-xb7p.onrender.com";
 
 export const generateInterviewReport = async ({ jobDescription, selfDescription, resumeFile }) => {
     const formData = new FormData();

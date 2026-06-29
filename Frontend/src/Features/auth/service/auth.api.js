@@ -55,7 +55,7 @@
 import axios from "axios";
 
 // Define the live production Render URL (Make sure there is no trailing slash)
-const BASE_URL = "https://interview-ai-xh7p.onrender.com";
+const BASE_URL = "https://interview-ai-xb7p.onrender.com";
 
 export async function register({ username, email, password }) {
     try {
