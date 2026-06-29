@@ -10,6 +10,7 @@ app.use(cookieParser())
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
+  "https://interview-ai-dusky-mu.vercel.app",
 ]
 
 app.use(cors({
