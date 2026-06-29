@@ -17,8 +17,8 @@ app.use(cors({
 }))
 
 
-const userAuth = require("../src/routes/auth.routes")
-const interviewRouter = require("../src/routes/interview.routes")
+const userAuth = require("./routes/auth.routes")
+const interviewRouter = require("./routes/interview.routes")
 
 app.use('/api/auth', userAuth)
 app.use("/api/interview", interviewRouter)

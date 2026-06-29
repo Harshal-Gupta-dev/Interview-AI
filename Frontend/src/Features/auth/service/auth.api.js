@@ -54,7 +54,7 @@
 
 import axios from "axios";
 
-// Define the live production Render URL
+// Define the live production Render URL (Make sure there is no trailing slash)
 const BASE_URL = "https://interview-ai-xh7p.onrender.com";
 
 export async function register({ username, email, password }) {
@@ -96,6 +96,7 @@ export async function logout() {
 
 export async function getme() {
     try {
+        // Double check your backend file: if it says router.get("/getme"), change this to /getme
         const response = await axios.get(`${BASE_URL}/api/auth/get-me`, {
             withCredentials: true
         });
